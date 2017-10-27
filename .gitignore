@@ -57,3 +57,12 @@ typings/
 # dotenv environment variables file
 .env
 
+# Babel build
+dist/
+
+# Program output dir
+cache/
+*.csv
+
+# VSCode
+.vscode/
