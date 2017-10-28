@@ -4,7 +4,7 @@ import downloadProductionInfo, {
   prodCachedFileNameFromId
 } from '../util/production-info';
 import getStats from '../util/get-stats';
-import logger from '../util/logger';
+import logger, { logToFile } from '../util/logger';
 import {
   createCacheDir,
   ensureCacheExists,
@@ -53,6 +53,9 @@ async function downloadProductions(ids, ms, cache, downloaded = []) {
 }
 
 export default async function run(argv) {
+  if (!_.isEmpty(argv.logFile)) {
+    logToFile(argv.logFile);
+  }
   const cacheDir = argv.cacheDir || createCacheDir();
   const cache = ensureCache(cacheDir);
 

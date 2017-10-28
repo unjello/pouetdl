@@ -25,6 +25,10 @@ export default function getParser(config = {}) {
       describe: 'Cache directory location',
       default: ''
     })
+    .option('log-file', {
+      describe: 'Filename for logging output',
+      default: ''
+    })
     .epilogue('Documentation: https://github.com/unjello/pouetdl')
     .config(config);
 }

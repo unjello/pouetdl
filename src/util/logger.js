@@ -17,3 +17,7 @@ const logger = createLogger({
 });
 
 export default logger;
+
+export function logToFile(name = 'error.log', level = 'debug') {
+  logger.add(new winston.transports.File({ filename: name, level, format: winston.format.json() }));
+}
