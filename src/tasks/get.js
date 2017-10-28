@@ -38,7 +38,7 @@ async function getAllProductionIds(from, to) {
     logger.debug(`Found ${stats.stats.prods_all} productions`);
     end = stats.stats.prods_all;
   }
-  logger.verbose(`Using Id range ${from}-${to}`);
+  logger.verbose(`Using Id range ${from}-${end}`);
   return _.range(from, end + 1);
 }
 
