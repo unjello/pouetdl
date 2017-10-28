@@ -1,8 +1,16 @@
 plugins:
   - lodash-fp
+  - prettier
 extends:
+  - prettier
   - airbnb-base
   - plugin:lodash-fp/recommended
 rules:
   comma-dangle:
-    - off # disable this rule as prettifier removes commas
+    - off # disable this rule as prettier removes commas.
+  quotes:
+    - error
+    - 'single'
+  arrow-parens:
+    - error
+    - as-needed # one more out of sync with airbnb style.
