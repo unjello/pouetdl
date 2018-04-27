@@ -6,7 +6,7 @@
   "bin": "bin/index.js",
   "preferGlobal": true,
   "author": "Andrzej Lichnerowicz <andrzej@lichnerowicz.pl>",
-  "license": "GPL-3.0",
+  "license": "Unlicense",
   "engine": {
     "node": ">=9.0"
   },
