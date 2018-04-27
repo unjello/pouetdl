@@ -11,13 +11,14 @@
     "node": ">=9.0"
   },
   "scripts": {
+    "start": "node bin/index.js get | pino-pretty-min",
     "lint": "standard | snazzy"
   },
   "dependencies": {
+    "args": "^4.0.0",
     "lodash": "^4.17.10",
     "node-fetch": "^2.0.0-alpha.9",
-    "pino": "^4.16.1",
-    "yargs": "^11.0.0"
+    "pino": "^4.16.1"
   },
   "repository": {
     "type": "git",
