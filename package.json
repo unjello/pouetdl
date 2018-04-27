@@ -12,13 +12,20 @@
   },
   "scripts": {
     "start": "node bin/index.js get | pino-pretty-min",
-    "lint": "standard | snazzy"
+    "lint": "standard | snazzy",
+    "test": "jest --env=node --coverage"
   },
   "dependencies": {
     "args": "^4.0.0",
+    "fs-extra": "^5.0.0",
     "lodash": "^4.17.10",
     "node-fetch": "^2.0.0-alpha.9",
     "pino": "^4.16.1"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
   },
   "repository": {
     "type": "git",

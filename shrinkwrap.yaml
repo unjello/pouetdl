@@ -1,5 +1,6 @@
 dependencies:
   args: 4.0.0
+  fs-extra: 5.0.0
   lodash: 4.17.10
   node-fetch: 2.1.2
   pino: 4.16.1
@@ -1563,6 +1564,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-QpD60n8T6Jvn8zeZxrxaCr//DRk=
+  /fs-extra/5.0.0:
+    dependencies:
+      graceful-fs: 4.1.11
+      jsonfile: 4.0.0
+      universalify: 0.1.1
+    dev: false
+    resolution:
+      integrity: sha512-66Pm4RYbjzdyeuqudYqhFiNBbCIuI9kgRqLPSHIlXHidW8NIQtVdkM1yeZ4lXwuhbTETv3EUGMNHAAw6hiundQ==
   /fs.realpath/1.0.0:
     dev: true
     resolution:
@@ -1666,7 +1675,6 @@ packages:
     resolution:
       integrity: sha1-69hGZ8oNuzMLmbz8aOrCvFQ3Dg0=
   /graceful-fs/4.1.11:
-    dev: true
     engines:
       node: '>=0.4.0'
     resolution:
@@ -2613,6 +2621,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Hq3nrMASA0rYTiOWdn6tn6VJWCE=
+  /jsonfile/4.0.0:
+    dev: false
+    optionalDependencies:
+      graceful-fs: 4.1.11
+    resolution:
+      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /jsonify/0.0.0:
     dev: true
     resolution:
@@ -4297,6 +4311,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-sxxa6CVIRKOoKBVBzisEuGWnNP8=
+  /universalify/0.1.1:
+    dev: false
+    resolution:
+      integrity: sha1-+nG63UQ3r0wUiEHjs7Fl+enlkLc=
   /unset-value/1.0.0:
     dependencies:
       has-value: 0.3.1
@@ -4520,6 +4538,7 @@ shrinkwrapMinorVersion: 4
 shrinkwrapVersion: 3
 specifiers:
   args: ^4.0.0
+  fs-extra: ^5.0.0
   jest: ^22.4.3
   lodash: ^4.17.10
   node-fetch: ^2.0.0-alpha.9
