@@ -2,7 +2,7 @@
 const { prodCachedFileNameFromId, downloadProductionInfo } = require('../lib/production-info')
 const getStats = require('../lib/get-stats')
 const logger = require('../lib/logger')
-const Cache = require('../lib/cache')
+const Cache = require('../lib/cache')()
 const Csv = require('../lib/csv')
 const _ = require('lodash/fp')
 const args = require('args')
